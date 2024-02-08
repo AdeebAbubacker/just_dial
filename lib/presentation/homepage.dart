@@ -333,3 +333,62 @@
 //     );
 //   }
 // }
+
+
+//----------------------------------------------------------------------------------------
+
+// import 'package:flutter/material.dart';
+
+// class HomePage extends StatefulWidget {
+//   const HomePage({Key? key}) : super(key: key);
+
+//   @override
+//   _HomePageState createState() => _HomePageState();
+// }
+
+// class _HomePageState extends State<HomePage> {
+//   double currentChildSize = 0.4; // Initial size when opened
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(),
+//       body: SafeArea(
+//         child: Center(
+//           child: Stack(
+//             children: [
+//               // Main bottom sheet
+//               DraggableScrollableSheet(
+//                 initialChildSize: currentChildSize,
+//                 minChildSize: 0.3,
+//                 maxChildSize: 0.9,
+
+//                 builder:
+//                     (BuildContext context, ScrollController scrollController) {
+//                   return CustomBottomSheet(
+//                     title: 'Main Bottom Sheet',
+//                     scrollController: scrollController,
+//                   );
+//                 },
+//               ),
+//               // Hidden bottom sheet
+//               DraggableScrollableSheet(
+//                 initialChildSize: currentChildSize,
+//                 minChildSize: 0.3,
+//                 maxChildSize: 0.9,
+//                 builder:
+//                     (BuildContext context, ScrollController scrollController) {
+//                   return CustomHiddenBottomSheet(
+//                     title: 'Hidden Bottom Sheet',
+//                     scrollController: scrollController,
+//                   );
+//                 },
+//               ),
+//               Text('data'),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }

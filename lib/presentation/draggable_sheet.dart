@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -31,7 +30,7 @@ class _HomePageState extends State<HomePage> {
                     minChildSize: 0.3,
                     maxChildSize: 0.9,
                     builder: (context, scrollController) => CustomBottomSheet(
-                      title: 'Main Bottom Sheet',
+                      title: 'Hidden  Bottom Sheet',
                       scrollController: scrollController,
                     ),
                   ),
@@ -44,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                     maxChildSize: 0.9,
                     builder: (context, scrollController) =>
                         CustomHiddenBottomSheet(
-                      title: 'Hidden Bottom Sheet',
+                      title: ' Main Bottom Sheet',
                       scrollController: scrollController,
                     ),
                   ),

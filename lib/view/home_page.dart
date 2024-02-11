@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
 class CustomDraggableScrollable extends StatefulWidget {
+  const CustomDraggableScrollable({super.key});
+
   @override
-  _CustomDraggableScrollableState createState() =>
+  State<CustomDraggableScrollable> createState() =>
       _CustomDraggableScrollableState();
 }
 
 class _CustomDraggableScrollableState extends State<CustomDraggableScrollable> {
   double _scrollPosition1 = 437.0;
   double _scrollPosition2 = 437.0;
-  double _previousScrollPosition1 = 437.0;
-  double _previousScrollPosition2 = 437.0;
+  final double _previousScrollPosition1 = 437.0;
+  final double _previousScrollPosition2 = 437.0;
   final double _minScrollPosition2 = 420.0;
   final double _maxScrollPosition2 = 690.0;
 
@@ -71,7 +73,7 @@ class _CustomDraggableScrollableState extends State<CustomDraggableScrollable> {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
-                color: Color.fromARGB(175, 212, 191, 0),
+                color: const Color.fromARGB(175, 212, 191, 0),
               ),
             ),
           ),

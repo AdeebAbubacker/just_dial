@@ -71,7 +71,7 @@ class _CustomDraggableScrollableState extends State<CustomDraggableScrollable> {
               child: Container(
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height,
-                color: const Color.fromARGB(255, 212, 81, 0),
+                color: Color.fromARGB(175, 212, 191, 0),
               ),
             ),
           ),

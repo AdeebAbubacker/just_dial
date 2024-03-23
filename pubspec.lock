@@ -120,6 +120,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.99"
+  snapping_bottom_sheet:
+    dependency: "direct main"
+    description:
+      name: snapping_bottom_sheet
+      sha256: "32da031444fb97c3c2c7fc1ccad1fe50fc09a57bb9dea12070e8baf27f075553"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   source_span:
     dependency: transitive
     description:
@@ -186,3 +194,4 @@ packages:
     version: "0.3.0"
 sdks:
   dart: ">=3.2.6 <4.0.0"
+  flutter: ">=1.17.0"
